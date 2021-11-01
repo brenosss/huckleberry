@@ -7,6 +7,54 @@ html,
 body {
   margin: 0;
   padding: 0;
+  color: hsl(0deg, 0%, 20%);
 }
 
 /* Add styles here! */
+
+header {
+  padding: 120px;
+  border-bottom: 5px solid hsl(0deg, 0%, 40%);
+  font-size: 1.25rem;
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+  padding: 100px;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+h2 {
+  margin-left: -35px;
+  background-color: hsl(45deg, 100%, 50%);
+  padding-block: 20px;
+  padding-inline: 35px;
+  border-bottom: 5px solid hsl(45deg, 100%, 40%);
+  display: inline-block;
+}
+
+.card {
+  max-width: 600px;
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: 5px solid hsl(0deg, 0%, 40%);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  main {
+    padding-block: 40px;
+    padding-inline: 0px;
+  }
+
+  .card {
+    max-width: fit-content;
+  }
+}
